@@ -8,7 +8,7 @@ Jennina Färm
 
 ## Topic
 
-Mobile application that can be used as a food diery. It uses Finelly open data api. You can search ingredients and foods from the api and it will display the basic diet information like carps, protein and fat. You can also read bar codes from products directly and add them to you food diery.
+Mobile application that can be used as a food diery. It uses Fineli open data api. You can search ingredients and foods from the api and it will display the basic diet information like carps, protein and fat. You can also read bar codes from products directly and add them to you food diery.
 
 ## Target
 

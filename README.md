@@ -1,6 +1,6 @@
 # FinellyFoodApp
 
-This project is for native mobile development and it is based on the wishes of my friends company. It will demonstrade as a prototype.
+This project is for native mobile development and it is based on the wishes of my friend's company. It will demonstrade as a prototype.
 
 ## Name
 
@@ -13,6 +13,12 @@ Jennina Färm
 Mobile application for android where you can read bar codes from groceries. Bar code reader is using CameraX API for using decive camera and ML kit API for recognizing barcodes from live feed.
 
 From the barcode rawdata application fill fetch data for basic diet information like carps, proteion and fat. For this app is using FatSecret Platform API.
+
+#### Links to API:s
+
+- https://platform.fatsecret.com/api/
+- https://developer.android.com/training/camerax
+- https://developers.google.com/ml-kit
 
 ### Ideas to continue
 

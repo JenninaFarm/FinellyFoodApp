@@ -1,7 +1,16 @@
 <resources>
-    <string name="app_name">Test2</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Bottom</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_scan_barcode">Scan Barcode</string>
     <string name="scanned_code_result_label">Scan Result:</string>
+    <string name="incredients">Incredients /100g:</string>
+    <string name="food_name_label">Item:</string>
+    <string name="barcode_label">Barcode:</string>
+    <string name="calories_label">Calories:</string>
+    <string name="carbs_label">Carbs:</string>
+    <string name="fat_label">Fat:</string>
+    <string name="protein_label">Protein:</string>
 
 </resources>

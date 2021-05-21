@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="fi.tuni.tamk.bottom.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="fi.tuni.tamk.bottom.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <argument
+            android:name="barcode"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_navigation_scan_barcode_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_home">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_scan_barcode"
+        android:name="fi.tuni.tamk.bottom.ui.scanBarcode.ScanBarcodeFragment"
+        android:label="Scan Barcode"
+        tools:layout="@layout/fragment_scan_barcode" >
+        <action
+            android:id="@+id/action_navigation_scan_barcode_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+        <action
+            android:id="@+id/action_navigation_scan_barcode_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/navigation_home">
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="fi.tuni.tamk.bottom.ui.scanBarcode.PermissionsFragment"
+        android:label="PermissionsFragment" >
+        <action
+            android:id="@+id/action_permissionsFragment_to_navigation_scan_barcode"
+            app:destination="@id/navigation_scan_barcode" />
+    </fragment>
+</navigation>

@@ -1,6 +1,6 @@
 # FinellyFoodApp
 
-This project is for native mobile development and it is based on the wishes of my friend's company. It will demonstrade as a prototype.
+This project is for native mobile development and it is based on the wishes of my friend's company.
 
 ## Name
 
@@ -24,7 +24,7 @@ From the barcode rawdata application fill fetch data for basic diet information 
 
 Mobile application can be used as a food diery. From fetched diet info user can add servings to his/her food diery.
 
-Since FatSecret don't have most of the bar codes for products originated from Finland, there sould be a way to find ingredients adnd product by name to complite user's opportunity to add those to the food diery.
+Since FatSecret don't have most of the bar codes for products originated from Finland, there sould be a way to find ingredients and product by name to complite user's opportunity to add those to the food diery.
 
 ## Target
 
@@ -42,13 +42,16 @@ http://... (will be updated when ready)
 
 ### Release 2: 2021-05-21 features
 
-- User is able to
-- User is able to
-- ...
+- User is able to see full ui with bottom menu
+- User is able to navigate to barcode scanner, dashboard and home
+- User is able to read EAN-13, EAN-8 and UPC-A barcodes with the live camera feed and ui navigates to the dashboard to show the results
+- In dashboard user is able to see the read barcode
+- In dashboard user is able to see nutrient content of French Toast per 100g once barcode is read
 
 ### Known Bugs
 
-- App may
+- App don't receive information of the barcode since the App don't have needed credentials yet
+  - This is why it only shows the French Toast at the moment
 - Gives error code: E/libc: Access denied finding property "persist.vendor.camera.privapp.list"
   - It doesn't seem to effect of the usage though
   - Used device: OnePlus6
@@ -57,4 +60,4 @@ http://... (will be updated when ready)
 
 Here is a demonstration about UI, relevant parts of the code, known bugs and self-evaluation
 
-- Will be updated when ready ;)
+- https://youtu.be/Rvt4sgFklIM

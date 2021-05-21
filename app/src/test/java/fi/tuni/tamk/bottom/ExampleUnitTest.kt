@@ -1,4 +1,4 @@
-package fi.tuni.tamk.test2
+package fi.tuni.tamk.bottom
 
 import org.junit.Test
 
